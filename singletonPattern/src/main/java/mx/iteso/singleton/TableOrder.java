@@ -22,26 +22,28 @@ public abstract class TableOrder {
         dishes.add(dish);
     }
 
-    public void printCheck(){
+    public String printCheck(){
+        String Print = "";
         float total = 0;
         Drink dr;
         Dish ds;
         int i;
-        System.out.println("Check for " + tableName);
-        System.out.println("Drinks:");
+        Print += "Check for " + tableName;
+        Print += "\nDrinks:\n";
         for (i = 0; i < drinks.size(); i++){
             dr = (Drink) drinks.get(i);
-            System.out.println(dr.getWaiter() + ": " + dr.getName()+ " " + dr.getPrice());
+            Print += dr.getWaiter() + ": " + dr.getName()+ " " + dr.getPrice() + "\n";
             total += dr.getPrice();
         }
-        System.out.println("Dishes:");
+        Print += "Dishes:\n";
         for (i = 0; i < dishes.size(); i++){
             ds = (Dish) dishes.get(i);
-            System.out.println(ds.getWaiter() + ": " + ds.getName()+ " " + ds.getPrice());
+            Print += ds.getWaiter() + ": " + ds.getName()+ " " + ds.getPrice() + "\n";
             total += ds.getPrice();
         }
-        System.out.println("Total: $" + total);
+        Print += "Total: $" + total;
 
+        return Print;
     }
 
 
