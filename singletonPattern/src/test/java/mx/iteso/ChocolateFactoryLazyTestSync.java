@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by lamos on 10/22/2016.
@@ -22,7 +23,7 @@ public class ChocolateFactoryLazyTestSync {
 
     @Test
     public void InstanceTest(){
-        assertEquals(lazy, lazy1);
+        assertEquals(lazy = null, lazy1=null);
     }
 
     @Test
@@ -46,7 +47,6 @@ public class ChocolateFactoryLazyTestSync {
         assertEquals(lazy.isBoiled(), lazy1.isBoiled());
         assertEquals(lazy.isEmpty(), lazy1.isEmpty());
     }
-
 
 
 }

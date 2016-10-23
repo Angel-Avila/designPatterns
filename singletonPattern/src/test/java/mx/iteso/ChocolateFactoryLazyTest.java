@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-
+import static org.junit.Assert.assertTrue;
 
 
 /**
@@ -39,6 +39,7 @@ public class ChocolateFactoryLazyTest {
         lazy.drain();
         assertEquals(lazy1.isEmpty(), lazy.isEmpty());
         assertEquals(lazy1.isBoiled(), lazy.isBoiled());
+            assertTrue(lazy.isEmpty());
         }
 
         @Test
@@ -47,6 +48,7 @@ public class ChocolateFactoryLazyTest {
             assertEquals(lazy.isBoiled(), lazy1.isBoiled());
             assertEquals(lazy.isEmpty(), lazy1.isEmpty());
         }
+
 
 
 
