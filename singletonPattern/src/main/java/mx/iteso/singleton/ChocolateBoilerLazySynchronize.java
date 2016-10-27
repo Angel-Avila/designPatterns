@@ -15,7 +15,7 @@ public class ChocolateBoilerLazySynchronize {
         boiled = false;
     }
 
-    public static synchronized ChocolateBoilerLazySynchronize getInstace() {
+    public static synchronized ChocolateBoilerLazySynchronize getInstance() {
         if(instance == null) instance = new ChocolateBoilerLazySynchronize();
         return instance;
     }
