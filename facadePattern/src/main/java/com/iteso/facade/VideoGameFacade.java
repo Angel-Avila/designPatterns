@@ -33,6 +33,9 @@ public class VideoGameFacade {
         this.lights = lights;
     }
 
+    public void setConsole(GameConsole console) {
+        this.console = console;
+    }
 
     public void playOnlineGame(String gameName){
 
