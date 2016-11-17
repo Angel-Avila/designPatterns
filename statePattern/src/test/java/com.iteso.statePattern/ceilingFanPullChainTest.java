@@ -11,16 +11,10 @@ import static org.junit.Assert.assertEquals;
 public class ceilingFanPullChainTest {
 
     private CeilingFanPullChain ceilingFanPullChain;
-    private State stateHigh;
-    private State stateMedium;
-    private State stateLow;
     private State stateOff;
 
     @Before
     public void setup() {
-        stateHigh = new High();
-        stateMedium = new Medium();
-        stateLow = new Low();
         stateOff = new Off();
         ceilingFanPullChain = new CeilingFanPullChain();
     }
