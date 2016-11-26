@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
 
 public class Main {
 
-	public static void main(String[] args) { // MAIN CLIENTE
+	public static void main(String[] args) { // MAIN CLIENTE Actua principalmente como Model puesto que da las reglas de los clientes asi como maneja la informacion para mandarla  al servidor
 		// TODO Auto-generated method stub
 		Socket Client;
 
@@ -29,7 +29,7 @@ public class Main {
 			pw = new PrintWriter(Client.getOutputStream());
 			while (true) {
 
-				String strMsg = JOptionPane.showInputDialog("Escriba un mensaje:");
+				String strMsg = JOptionPane.showInputDialog("Escriba un mensaje:"); // esta parte Actua como controller Al pedir un Input al cliente
 
 				pw.println(strMsg);
 				pw.flush();

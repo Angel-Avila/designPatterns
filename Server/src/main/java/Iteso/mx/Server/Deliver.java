@@ -1,6 +1,6 @@
 package Iteso.mx.Server;import java.io.*;
 
-public class Deliver implements Runnable {
+public class Deliver implements Runnable { // esta clase manda los mensajes que se reciven  y los reparte, es un VIew mas que nada hacer que todos puedan ver sus mensajes
 
 	public void run() {
 

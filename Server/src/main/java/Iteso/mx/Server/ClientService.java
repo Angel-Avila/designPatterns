@@ -2,7 +2,7 @@ package Iteso.mx.Server;import java.net.*;
 import java.util.Scanner;
 import java.util.*;
 
-public class ClientService implements Runnable {
+public class ClientService implements Runnable {  // este servicio es el que controloa a los clientes por lo tanto es un Model, maneja datos y define las reglas de los clientes
 
 	static int KeyGenID;
 	Socket Client;

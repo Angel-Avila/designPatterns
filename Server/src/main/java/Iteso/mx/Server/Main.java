@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Main {
 
-	public static ArrayList<ClientService> Clients; // MAIN SERVER
+	public static ArrayList<ClientService> Clients; // MAIN SERVER   Model que hace las reglas de la creacoin del servidor y la logica
 	public static Object CriticalSection;
 
 	public static void main(String[] args) {
