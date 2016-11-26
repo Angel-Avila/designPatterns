@@ -66,7 +66,7 @@ public void newConnection(){
                     if (strMsg.equals("close"))
                         break;
                     assertEquals("hola", strMsg);
-                   
+
             }
         } catch (Exception e) {
 
